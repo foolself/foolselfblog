@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+</head>
+<body>
+<h1>books</h1>
+<ul>
+	{% for article in article_list %}
+	<li>{{ article.title }}</li>
+	<li>{{ article.author }}</li>
+	<div>{{ article.text|safe }}</div>
+	{% endfor %}
+</ul>
+</body>
+</html>
